@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin - ANANTAXMEIOS</title>
+
+
+<style>
+
+body{
+
+margin:0;
+font-family:Arial,sans-serif;
+background:#EAF6FF;
+color:#526273;
+
+}
+
+
+.container{
+
+width:500px;
+max-width:90%;
+margin:60px auto;
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+h1{
+
+text-align:center;
+color:#4A90E2;
+
+}
+
+
+input,textarea,select{
+
+width:100%;
+
+padding:14px;
+
+margin-top:15px;
+
+border:1px solid #ddd;
+
+border-radius:15px;
+
+font-size:15px;
+
+}
+
+
+textarea{
+
+height:100px;
+
+}
+
+
+
+button{
+
+width:100%;
+
+margin-top:20px;
+
+padding:15px;
+
+border:0;
+
+border-radius:30px;
+
+background:#4A90E2;
+
+color:white;
+
+font-size:16px;
+
+cursor:pointer;
+
+}
+
+
+.preview{
+
+margin-top:30px;
+
+}
+
+
+.card{
+
+background:#f8fcff;
+
+padding:20px;
+
+border-radius:20px;
+
+}
+
+
+.card img{
+
+width:100%;
+
+border-radius:15px;
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<div class="container">
+
+
+<h1>
+Upload Media
+</h1>
+
+
+
+<input id="judul" placeholder="Judul konten">
+
+
+<select id="kategori">
+
+<option value="Foto">
+Foto
+</option>
+
+<option value="Video">
+Video
+</option>
+
+<option value="Blog">
+Blog
+</option>
+
+
+</select>
+
+
+
+
+<input id="gambar" placeholder="Link gambar">
+
+
+<textarea id="deskripsi" placeholder="Deskripsi"></textarea>
+
+
+
+<button onclick="tambah()">
+Tambah Konten
+</button>
+
+
+
+<div class="preview" id="hasil"></div>
+
+
+</div>
+
+
+
+
+
+
+<script>
+
+
+function tambah(){
+
+
+let judul =
+document.getElementById("judul").value;
+
+
+let kategori =
+document.getElementById("kategori").value;
+
+
+let gambar =
+document.getElementById("gambar").value;
+
+
+let deskripsi =
+document.getElementById("deskripsi").value;
+
+
+
+document.getElementById("hasil").innerHTML = `
+
+<div class="card">
+
+<img src="${gambar}">
+
+<h3>${judul}</h3>
+
+<p>${kategori}</p>
+
+<p>${deskripsi}</p>
+
+</div>
+
+`;
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
