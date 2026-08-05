@@ -1,134 +1,346 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>ANANTAXMEIOS</title>
 
-<link rel="stylesheet" href="style.css">
-
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(#EAF6FF, #FFFFFF);
-    color: #5F6B7A;
-    min-height: 100vh;
-    overflow: hidden;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 40px;
-    box-sizing: border-box;
+
+body{
+
+    font-family:Arial, sans-serif;
+
+    background:
+    linear-gradient(
+        180deg,
+        #EAF6FF,
+        #FFFFFF
+    );
+
+    color:#5F6B7A;
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
 }
 
-.logo {
-    font-size: 32px;
-    font-weight: bold;
-    color: #4A90E2;
-    letter-spacing: 3px;
+
+
+/* HEADER */
+
+header{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 40px;
+
 }
 
-nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #5F6B7A;
+
+
+.logo{
+
+    font-size:32px;
+
+    font-weight:bold;
+
+    letter-spacing:3px;
+
+
+    background:
+    linear-gradient(
+        90deg,
+        #4A90E2,
+        #D4AF37
+    );
+
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
 }
 
-.container {
-    text-align: center;
-    margin-top: 120px;
-    animation: fadeIn 2s ease;
+
+
+nav a{
+
+    margin-left:20px;
+
+    text-decoration:none;
+
+    color:#5F6B7A;
+
+    transition:.3s;
+
 }
 
-.tagline {
-    font-size: 18px;
-    margin-top: 15px;
+
+nav a:hover{
+
+    color:#4A90E2;
+
 }
 
-.button {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 12px 30px;
-    background: #D4AF37;
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: 0.3s;
+
+
+/* CONTENT */
+
+.container{
+
+    text-align:center;
+
+    margin-top:120px;
+
+    animation:fadeIn 2s ease;
+
 }
 
-.button:hover {
-    transform: translateY(-5px);
+
+
+.tagline{
+
+    font-size:18px;
+
+    margin-top:15px;
+
+    letter-spacing:1px;
+
 }
 
-.cloud {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    font-size: 60px;
-    opacity: 0.5;
-    animation: moveCloud 12s infinite alternate;
+
+
+.button{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:12px 35px;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #D4AF37,
+        #EBCB62
+    );
+
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+
+    box-shadow:
+
+    0 8px 20px rgba(212,175,55,.25);
+
+
+    transition:.3s;
+
 }
 
-@keyframes moveCloud {
-    from {
-        transform: translateX(0);
+
+
+.button:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+/* CLOUD */
+
+.cloud{
+
+    position:absolute;
+
+    top:20%;
+
+    left:10%;
+
+    font-size:60px;
+
+    opacity:.5;
+
+    animation:moveCloud 12s infinite alternate;
+
+}
+
+
+
+/* ANIMATION */
+
+@keyframes moveCloud{
+
+    from{
+
+        transform:translateX(0);
+
     }
-    to {
-        transform: translateX(80px);
+
+
+    to{
+
+        transform:translateX(80px);
+
     }
+
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
     }
+
 }
+
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+header{
+
+    padding:20px;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+.logo{
+
+    font-size:25px;
+
+}
+
+
+nav a{
+
+    margin:0 8px;
+
+}
+
+
+.container{
+
+    margin-top:80px;
+
+}
+
+
+}
+
 </style>
 
 </head>
 
+
 <body>
 
-<header>
-    <div class="logo">
-        ANANTAXMEIOS
-    </div>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Explore</a>
-        <a href="#">Media</a>
-        <a href="#">Blog</a>
-        <a href="#">About</a>
-    </nav>
+<header>
+
+<div class="logo">
+
+ANANTAXMEIOS
+
+</div>
+
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#">Explore</a>
+
+<a href="#">Media</a>
+
+<a href="#">Blog</a>
+
+<a href="#">About</a>
+
+</nav>
+
+
 </header>
 
 
-<div class="cloud">☁️</div>
+
+<div class="cloud">
+
+☁️
+
+</div>
+
 
 
 <div class="container">
 
-    <div class="tagline">
-        Infinite • Calm • Creative
-    </div>
 
-    <a href="#" class="button">
-        Explore
-    </a>
+<div class="tagline">
+
+Infinite • Calm • Creative
 
 </div>
 
+
+
+<a href="#" class="button">
+
+Explore
+
+</a>
+
+
+
+</div>
+
+
+
 </body>
+
 </html>
