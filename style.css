@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#EAF6FF, #FFFFFF);
+    color: #5F6B7A;
+}
+
+.container {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: bold;
+    color: #4A90E2;
+}
