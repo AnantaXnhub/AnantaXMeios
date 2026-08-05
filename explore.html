@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
 
 <meta charset="UTF-8">
@@ -9,313 +10,116 @@
 
 <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
 body{
-
-    background:linear-gradient(
-        180deg,
-        #EAF6FF,
-        #FFFFFF
-    );
-
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#EAF6FF;
     color:#526273;
-
 }
 
-
-/* HEADER */
 
 header{
-
     padding:25px 8%;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
+    background:white;
 }
 
 
 .logo{
-
-    font-size:30px;
-
-    font-weight:800;
-
-    letter-spacing:3px;
-
+    font-size:28px;
+    font-weight:bold;
     color:#4A90E2;
-
 }
 
 
 nav a{
-
-    margin-left:25px;
-
+    margin-left:20px;
     text-decoration:none;
-
     color:#526273;
-
 }
 
 
-/* HERO */
-
-.explore-header{
-
+.hero{
     text-align:center;
-
-    padding:70px 8%;
-
+    padding:60px 20px;
 }
 
 
-.explore-header h1{
-
-    font-size:50px;
-
+.hero h1{
     color:#4A90E2;
-
+    font-size:45px;
 }
-
-
-.explore-header p{
-
-    margin-top:20px;
-
-    font-size:18px;
-
-}
-
-
-
-
-
-/* SEARCH */
-
-.search{
-
-    display:flex;
-
-    justify-content:center;
-
-    margin-bottom:40px;
-
-}
-
-
-.search input{
-
-    width:500px;
-
-    max-width:90%;
-
-    padding:15px 25px;
-
-    border-radius:40px;
-
-    border:1px solid #ddd;
-
-    font-size:16px;
-
-}
-
-
-
-
-
-/* FILTER */
-
-.filter{
-
-    text-align:center;
-
-    margin-bottom:50px;
-
-}
-
-
-.filter button{
-
-    padding:12px 25px;
-
-    margin:5px;
-
-    border:none;
-
-    border-radius:30px;
-
-    background:white;
-
-    color:#4A90E2;
-
-    cursor:pointer;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.05);
-
-}
-
-
-.filter button:hover{
-
-    background:#4A90E2;
-
-    color:white;
-
-}
-
-
-
-
-
-/* CONTENT */
-
-.container{
-
-    padding:0 8% 70px;
-
-}
-
 
 
 .grid{
 
+    width:85%;
+    margin:auto;
+
     display:grid;
 
     grid-template-columns:
-    repeat(auto-fit,minmax(260px,1fr));
+    repeat(auto-fit,minmax(250px,1fr));
 
-    gap:30px;
+    gap:25px;
 
 }
-
 
 
 .card{
 
     background:white;
 
-    border-radius:25px;
+    border-radius:20px;
 
     overflow:hidden;
 
-    box-shadow:
-    0 15px 35px rgba(74,144,226,.12);
-
-    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 
 }
-
-
-.card:hover{
-
-    transform:translateY(-8px);
-
-}
-
 
 
 .card img{
 
     width:100%;
-
-    height:220px;
-
+    height:200px;
     object-fit:cover;
 
 }
 
 
+.info{
 
-.content{
-
-    padding:25px;
+    padding:20px;
 
 }
 
 
-.content span{
+.info h3{
+
+    color:#4A90E2;
+
+}
+
+
+.info span{
 
     color:#D4AF37;
 
-    font-size:14px;
-
 }
-
-
-.content h3{
-
-    color:#4A90E2;
-
-    margin:10px 0;
-
-}
-
-
-.content p{
-
-    line-height:1.6;
-
-}
-
-
-
-.link{
-
-    display:inline-block;
-
-    margin-top:15px;
-
-    color:#4A90E2;
-
-    text-decoration:none;
-
-}
-
-
-
 
 
 footer{
 
-    background:white;
-
+    text-align:center;
     padding:30px;
 
-    text-align:center;
-
 }
-
-
-
-
-
-@media(max-width:700px){
-
-    nav{
-        display:none;
-    }
-
-
-    .explore-header h1{
-
-        font-size:38px;
-
-    }
-
-}
-
 
 </style>
+
 
 </head>
 
@@ -324,7 +128,6 @@ footer{
 
 
 <header>
-
 
 <div class="logo">
 ANANTAXMEIOS
@@ -335,9 +138,8 @@ ANANTAXMEIOS
 
 <a href="index.html">Home</a>
 <a href="explore.html">Explore</a>
-<a href="#">Foto</a>
-<a href="#">Video</a>
-<a href="#">Blog</a>
+<a href="foto.html">Foto</a>
+<a href="video.html">Video</a>
 
 </nav>
 
@@ -348,19 +150,15 @@ ANANTAXMEIOS
 
 
 
-<section class="explore-header">
-
+<section class="hero">
 
 <h1>
 Explore Media
 </h1>
 
-
 <p>
-Temukan berbagai visual kreatif,
-foto, video, dan cerita digital.
+Temukan foto, video, dan karya kreatif.
 </p>
-
 
 </section>
 
@@ -368,134 +166,9 @@ foto, video, dan cerita digital.
 
 
 
-<div class="search">
-
-<input placeholder="Cari media...">
+<div class="grid" id="mediaList">
 
 </div>
-
-
-
-
-
-<div class="filter">
-
-<button>
-All
-</button>
-
-<button>
-📷 Foto
-</button>
-
-<button>
-🎬 Video
-</button>
-
-<button>
-✦ Creative
-</button>
-
-
-</div>
-
-
-
-
-
-
-<section class="container">
-
-
-<div class="grid">
-
-
-
-<div class="card">
-
-<img src="https://picsum.photos/600/400">
-
-<div class="content">
-
-<span>Photography</span>
-
-<h3>
-Sky Landscape
-</h3>
-
-<p>
-Eksplorasi visual langit dan alam.
-</p>
-
-<a class="link" href="#">
-View More →
-</a>
-
-</div>
-
-</div>
-
-
-
-
-<div class="card">
-
-<img src="https://picsum.photos/601/400">
-
-<div class="content">
-
-<span>Video</span>
-
-<h3>
-Ocean Motion
-</h3>
-
-<p>
-Cerita visual dalam bentuk video.
-</p>
-
-<a class="link" href="#">
-View More →
-</a>
-
-</div>
-
-</div>
-
-
-
-
-<div class="card">
-
-<img src="https://picsum.photos/602/400">
-
-<div class="content">
-
-<span>Creative</span>
-
-<h3>
-Digital World
-</h3>
-
-<p>
-Inspirasi dan karya digital.
-</p>
-
-<a class="link" href="#">
-View More →
-</a>
-
-</div>
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
 
 
 
@@ -506,6 +179,61 @@ View More →
 © 2026 ANANTAXMEIOS
 
 </footer>
+
+
+
+
+<script src="content.js"></script>
+
+
+<script>
+
+
+const list = document.getElementById("mediaList");
+
+
+media.forEach(item => {
+
+
+list.innerHTML += `
+
+<div class="card">
+
+
+<img src="${item.gambar}">
+
+
+<div class="info">
+
+
+<span>
+${item.kategori}
+</span>
+
+
+<h3>
+${item.judul}
+</h3>
+
+
+<p>
+${item.deskripsi}
+</p>
+
+
+</div>
+
+
+</div>
+
+`;
+
+
+});
+
+
+</script>
+
 
 
 </body>
