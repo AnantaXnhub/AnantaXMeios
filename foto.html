@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Photography - ANANTAXMEIOS</title>
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+
+body{
+
+    background:linear-gradient(
+        180deg,
+        #EAF6FF,
+        #FFFFFF
+    );
+
+    color:#526273;
+
+}
+
+
+
+/* HEADER */
+
+header{
+
+    padding:25px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:800;
+
+    letter-spacing:3px;
+
+    color:#4A90E2;
+
+}
+
+
+
+nav a{
+
+    margin-left:25px;
+
+    text-decoration:none;
+
+    color:#526273;
+
+}
+
+
+
+
+
+/* TITLE */
+
+.page-header{
+
+    text-align:center;
+
+    padding:70px 8% 40px;
+
+}
+
+
+
+.page-header h1{
+
+    font-size:50px;
+
+    color:#4A90E2;
+
+}
+
+
+
+.page-header p{
+
+    margin-top:20px;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+/* SEARCH */
+
+
+.search{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.search input{
+
+    width:500px;
+
+    max-width:90%;
+
+    padding:15px 25px;
+
+    border-radius:40px;
+
+    border:1px solid #ddd;
+
+    font-size:16px;
+
+}
+
+
+
+
+
+/* CATEGORY */
+
+
+.category{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.category button{
+
+    padding:12px 25px;
+
+    margin:5px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:white;
+
+    color:#4A90E2;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.05);
+
+}
+
+
+
+.category button:hover{
+
+    background:#4A90E2;
+
+    color:white;
+
+}
+
+
+
+
+
+/* PHOTO GRID */
+
+
+.container{
+
+    padding:0 8% 70px;
+
+}
+
+
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(270px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.card{
+
+    background:white;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 15px 35px rgba(74,144,226,.12);
+
+    transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+}
+
+
+
+.info{
+
+    padding:25px;
+
+}
+
+
+
+.info small{
+
+    color:#D4AF37;
+
+}
+
+
+
+.info h3{
+
+    margin:12px 0;
+
+    color:#4A90E2;
+
+}
+
+
+
+.info p{
+
+    line-height:1.6;
+
+}
+
+
+
+.info a{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    text-decoration:none;
+
+    color:#4A90E2;
+
+}
+
+
+
+
+
+/* FEATURE */
+
+
+.feature{
+
+    margin:0 8% 60px;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:white;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.06);
+
+    text-align:center;
+
+}
+
+
+.feature h2{
+
+    color:#4A90E2;
+
+}
+
+
+
+.feature span{
+
+    color:#D4AF37;
+
+}
+
+
+
+
+
+footer{
+
+    background:white;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+
+
+
+
+@media(max-width:700px){
+
+    nav{
+        display:none;
+    }
+
+
+    .page-header h1{
+
+        font-size:38px;
+
+    }
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+
+<div class="logo">
+ANANTAXMEIOS
+</div>
+
+
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="explore.html">Explore</a>
+
+<a href="foto.html">Foto</a>
+
+<a href="video.html">Video</a>
+
+<a href="#">Blog</a>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<section class="page-header">
+
+
+<h1>
+Photography
+</h1>
+
+
+<p>
+Koleksi visual fotografi pilihan ANANTAXMEIOS.
+</p>
+
+
+</section>
+
+
+
+
+
+
+<div class="search">
+
+<input placeholder="Cari foto...">
+
+</div>
+
+
+
+
+
+
+<div class="category">
+
+<button>
+All
+</button>
+
+<button>
+Nature
+</button>
+
+<button>
+Landscape
+</button>
+
+<button>
+Architecture
+</button>
+
+<button>
+Creative
+</button>
+
+
+</div>
+
+
+
+
+
+
+<section class="feature">
+
+<h2>
+Featured Photography
+</h2>
+
+<br>
+
+<span>
+Captured Moments • Infinite Stories
+</span>
+
+</section>
+
+
+
+
+
+
+
+<section class="container">
+
+
+<div class="grid">
+
+
+
+<div class="card">
+
+
+<img src="https://picsum.photos/700/500">
+
+
+<div class="info">
+
+<small>
+Nature
+</small>
+
+
+<h3>
+Mountain Horizon
+</h3>
+
+
+<p>
+Pemandangan alam dengan nuansa tenang.
+</p>
+
+
+<a href="#">
+View Photo →
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<img src="https://picsum.photos/701/500">
+
+
+<div class="info">
+
+<small>
+Architecture
+</small>
+
+
+<h3>
+Modern City
+</h3>
+
+
+<p>
+Eksplorasi bentuk dan ruang.
+</p>
+
+
+<a href="#">
+View Photo →
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<img src="https://picsum.photos/702/500">
+
+
+<div class="info">
+
+<small>
+Creative
+</small>
+
+
+<h3>
+Blue Atmosphere
+</h3>
+
+
+<p>
+Visual dengan gaya minimalis.
+</p>
+
+
+<a href="#">
+View Photo →
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+© 2026 ANANTAXMEIOS
+
+</footer>
+
+
+
+</body>
+
+</html>
