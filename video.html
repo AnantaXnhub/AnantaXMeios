@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Video - ANANTAXMEIOS</title>
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+
+body{
+
+background:#f8fcff;
+color:#526273;
+
+}
+
+
+/* HEADER */
+
+header{
+
+background:white;
+
+padding:25px 7%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+}
+
+
+.logo{
+
+font-size:28px;
+
+font-weight:bold;
+
+letter-spacing:3px;
+
+
+background:linear-gradient(
+90deg,
+#4A90E2,
+#D4AF37
+);
+
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+}
+
+
+
+nav a{
+
+margin-left:20px;
+
+text-decoration:none;
+
+color:#526273;
+
+}
+
+
+
+
+/* HERO */
+
+.hero{
+
+padding:50px 7%;
+
+text-align:center;
+
+}
+
+
+.hero h1{
+
+font-size:40px;
+
+color:#3d82d8;
+
+}
+
+
+.hero p{
+
+margin-top:15px;
+
+}
+
+
+
+/* SEARCH */
+
+.search-box{
+
+padding:0 7%;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+
+
+.search-box input{
+
+width:600px;
+
+padding:15px 20px;
+
+border-radius:30px;
+
+border:1px solid #ddd;
+
+font-size:16px;
+
+}
+
+
+
+
+/* CATEGORY */
+
+.category{
+
+padding:30px 7%;
+
+text-align:center;
+
+}
+
+
+
+.category button{
+
+padding:10px 25px;
+
+margin:5px;
+
+border:0;
+
+border-radius:30px;
+
+background:#eaf6ff;
+
+color:#3d82d8;
+
+cursor:pointer;
+
+}
+
+
+
+.category button:hover{
+
+background:#4A90E2;
+
+color:white;
+
+}
+
+
+
+
+/* VIDEO GRID */
+
+
+.container{
+
+padding:20px 7%;
+
+}
+
+
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+.card{
+
+background:white;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+.thumbnail{
+
+position:relative;
+
+}
+
+
+
+.thumbnail img{
+
+width:100%;
+
+height:200px;
+
+object-fit:cover;
+
+}
+
+
+
+.duration{
+
+position:absolute;
+
+bottom:10px;
+
+right:10px;
+
+background:rgba(0,0,0,.7);
+
+color:white;
+
+padding:5px 10px;
+
+border-radius:10px;
+
+font-size:13px;
+
+}
+
+
+
+.content{
+
+padding:20px;
+
+}
+
+
+
+.content h3{
+
+color:#3d82d8;
+
+}
+
+
+
+.content p{
+
+margin-top:10px;
+
+}
+
+
+
+.btn{
+
+display:inline-block;
+
+margin-top:15px;
+
+padding:10px 20px;
+
+background:#4A90E2;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:20px;
+
+}
+
+
+
+.download{
+
+background:#D4AF37;
+
+margin-left:5px;
+
+}
+
+
+
+
+footer{
+
+text-align:center;
+
+padding:30px;
+
+background:white;
+
+margin-top:40px;
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+header{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+
+.hero h1{
+
+font-size:32px;
+
+}
+
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<header>
+
+
+<div class="logo">
+
+ANANTAXMEIOS
+
+</div>
+
+
+
+<nav>
+
+<a href="index.html">
+Home
+</a>
+
+
+<a href="foto.html">
+Foto
+</a>
+
+
+<a href="video.html">
+Video
+</a>
+
+
+<a href="upload.html">
+Upload
+</a>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+<section class="hero">
+
+
+<h1>
+
+Video Collection
+
+</h1>
+
+
+<p>
+
+Koleksi video digital berkualitas ANANTAXMEIOS
+
+</p>
+
+
+</section>
+
+
+
+
+
+<div class="search-box">
+
+
+<input placeholder="Cari video...">
+
+
+</div>
+
+
+
+
+
+
+<div class="category">
+
+
+<button>
+All
+</button>
+
+
+<button>
+Cinematic
+</button>
+
+
+<button>
+Animation
+</button>
+
+
+<button>
+Nature
+</button>
+
+
+<button>
+Technology
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<section class="container">
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<div class="thumbnail">
+
+
+<img src="https://picsum.photos/700/400">
+
+
+<div class="duration">
+
+02:35
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="content">
+
+
+<h3>
+
+Ocean Cinematic
+
+</h3>
+
+
+
+<p>
+
+Video 4K berkualitas tinggi
+
+</p>
+
+
+
+
+<a href="detail.html" class="btn">
+
+Detail
+
+</a>
+
+
+<a href="#" class="btn download">
+
+Download
+
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<div class="thumbnail">
+
+
+<img src="https://picsum.photos/701/400">
+
+
+<div class="duration">
+
+01:20
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="content">
+
+
+<h3>
+
+Future City
+
+</h3>
+
+
+
+<p>
+
+Digital animation video
+
+</p>
+
+
+
+
+
+<a href="detail.html" class="btn">
+
+Detail
+
+</a>
+
+
+
+<a href="#" class="btn download">
+
+Download
+
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+© 2026 ANANTAXMEIOS
+
+</footer>
+
+
+
+</body>
+
+</html>
