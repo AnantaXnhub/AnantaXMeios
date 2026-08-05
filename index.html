@@ -1,88 +1,105 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANANTAXMEIOS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ANANTAXMEIOS</title>
+
 <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(#EAF6FF, #FFFFFF);
-            color: #5F6B7A;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
 
-        .container {
-            text-align: center;
-            animation: fadeIn 2s ease;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#EAF6FF, #FFFFFF);
+    color: #5F6B7A;
+    min-height: 100vh;
+    overflow: hidden;
+}
 
-        .logo {
-            font-size: 45px;
-            font-weight: bold;
-            color: #4A90E2;
-            letter-spacing: 3px;
-        }
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    box-sizing: border-box;
+}
 
-        .tagline {
-            font-size: 18px;
-            margin-top: 15px;
-        }
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4A90E2;
+    letter-spacing: 3px;
+}
 
-        .button {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 12px 30px;
-            background: #D4AF37;
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            transition: 0.3s;
-        }
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #5F6B7A;
+}
 
-        .button:hover {
-            transform: translateY(-5px);
-        }
+.container {
+    text-align: center;
+    margin-top: 120px;
+    animation: fadeIn 2s ease;
+}
 
-        .cloud {
-            position: absolute;
-            top: 20%;
-            left: 10%;
-            font-size: 60px;
-            opacity: 0.5;
-            animation: moveCloud 12s infinite alternate;
-        }
+.tagline {
+    font-size: 18px;
+    margin-top: 15px;
+}
 
-        @keyframes moveCloud {
-            from {
-                transform: translateX(0);
-            }
-            to {
-                transform: translateX(80px);
-            }
-        }
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    background: #D4AF37;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+.button:hover {
+    transform: translateY(-5px);
+}
 
-    </style>
+.cloud {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 60px;
+    opacity: 0.5;
+    animation: moveCloud 12s infinite alternate;
+}
+
+@keyframes moveCloud {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(80px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+
 </head>
 
 <body>
+
 <header>
     <div class="logo">
         ANANTAXMEIOS
@@ -96,13 +113,12 @@
         <a href="#">About</a>
     </nav>
 </header>
+
+
 <div class="cloud">☁️</div>
 
-<div class="container">
 
-    <div class="logo">
-        ANANTAXMEIOS
-    </div>
+<div class="container">
 
     <div class="tagline">
         Infinite • Calm • Creative
